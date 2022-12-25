@@ -23,6 +23,7 @@ public class Monarchies extends Government {
     public void printInfo() {
         StringBuilder stringBuilder = new StringBuilder("");
         //название страны, кто правитель, сколько осталось править, количество субъектов
+        stringBuilder.append(id + '\n');
         stringBuilder.append("Строй: " + this.construction + '\n');
         stringBuilder.append("Название страны: " + this.governmentName + '\n');
         stringBuilder.append("Главный в стране: " + this.majorName + '\n');
