@@ -1,19 +1,19 @@
 public class Republic extends Government {
 
-    protected int numberBatches;
+    protected int numberBatches; //количество партий
+    protected String construction = "Republic"; //оно неизменно для этого типа
+    protected String major = "parliament"; //парламент бер республики не существует
+
+
 
     public Republic(){ //пустой конструктор
-        this.construction = "Republic";
-        this.electionDeadline = random.nextInt(10);
-        this.majorName = String.valueOf(major.values()[2]);
-        this.governmentName = String.valueOf(title.values()[2]);
+        this.warPower = random.nextInt(100);
+        this.governmentName = Main.scanner.nextLine(); //ввод названия страны
         this.numberBatches = random.nextInt(100);
     }
 
-    public Republic(String govermentName, int electionDeadline, int numberBatches){ //передали значения
-        this.construction = "Republic";
-        this.electionDeadline = electionDeadline;
-        this.majorName = String.valueOf(major.values()[2]); //всгда парламент
+    public Republic(String govermentName, int warPower, int numberBatches ){ //передали значения
+        this.warPower = warPower;
         this.governmentName = govermentName; //название страны
         this.numberBatches = numberBatches;
     }
@@ -24,23 +24,13 @@ public class Republic extends Government {
     public void printInfo() {
         StringBuilder stringBuilder = new StringBuilder("");
         //название страны, кто правитель, сколько осталось править, количество субъектов
-        stringBuilder.append(id + '\n');
+        stringBuilder.append("" + id + '\n');
         stringBuilder.append("Строй: " + this.construction + '\n');
         stringBuilder.append("Название страны: " + this.governmentName + '\n');
-        stringBuilder.append("Главный в стране: " + this.majorName + '\n');
-        stringBuilder.append("Срок выборов: " + this.electionDeadline + '\n');
+        stringBuilder.append("Главный в стране: " + this.major + '\n');
+        stringBuilder.append("Военный потенциал: " + this.warPower + '\n');
         stringBuilder.append("Количество партий: " + this.numberBatches + '\n');
 
         System.out.println(stringBuilder);
-    }
-
-    @Override
-    public void changeMajor() {
-
-    }
-
-    @Override
-    public void changeRegime() {
-
     }
 }

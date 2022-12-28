@@ -4,10 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3524563d-9cd7-4e10-9701-b10b3f02f4ab" name="Changes" comment="">
+    <list default="true" id="3524563d-9cd7-4e10-9701-b10b3f02f4ab" name="Changes" comment="make id">
+      <change afterPath="$PROJECT_DIR$/src/Planet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Laba4_Maltsev/Federation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Laba4_Maltsev/Federation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Laba4_Maltsev/Feed.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Laba4_Maltsev/Government$major.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Laba4_Maltsev/Government$title.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Laba4_Maltsev/Government.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Laba4_Maltsev/Government.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Laba4_Maltsev/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Laba4_Maltsev/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Laba4_Maltsev/Monarchies.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Laba4_Maltsev/Monarchies.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Laba4_Maltsev/Republic.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Laba4_Maltsev/Republic.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Federation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Federation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Feed.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Government.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Government.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Monarchies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Monarchies.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Republic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Republic.java" afterDir="false" />
     </list>
@@ -59,6 +70,14 @@
       <option name="presentableId" value="Default" />
       <updated>1671424019504</updated>
     </task>
+    <task id="LOCAL-00001" summary="make id">
+      <created>1671987685216</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1671987685216</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -71,5 +90,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="make id" />
+    <option name="LAST_COMMIT_MESSAGE" value="make id" />
   </component>
 </project>

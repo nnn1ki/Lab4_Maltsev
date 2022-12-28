@@ -1,19 +1,16 @@
 public class Monarchies extends Government {
     protected int timePower; //время у власти
-
+    protected String construction = "Monarchies"; //оно неизменно для этого типа
+    protected String major = "queen"; //парламент бер республики не существует
 
     public Monarchies(){
-        this.construction = "Monarchies";
-        this.electionDeadline = random.nextInt(10);
-        this.majorName = String.valueOf(major.values()[1]);
-        this.governmentName = String.valueOf(title.values()[1]);
+        this.warPower = random.nextInt(10);
+        this.governmentName = Main.scanner.nextLine();
         this.timePower = random.nextInt(100);
     }
 
     public Monarchies(String govermentName, int electionDeadline, int timePower){
-        this.construction = "Monarchies";
-        this.electionDeadline = electionDeadline;
-        this.majorName = String.valueOf(major.values()[1]);
+        this.warPower = electionDeadline;
         this.governmentName = govermentName;
         this.timePower = timePower;
     }
@@ -23,23 +20,14 @@ public class Monarchies extends Government {
     public void printInfo() {
         StringBuilder stringBuilder = new StringBuilder("");
         //название страны, кто правитель, сколько осталось править, количество субъектов
-        stringBuilder.append(id + '\n');
+        stringBuilder.append("" + id + '\n');
         stringBuilder.append("Строй: " + this.construction + '\n');
         stringBuilder.append("Название страны: " + this.governmentName + '\n');
-        stringBuilder.append("Главный в стране: " + this.majorName + '\n');
-        stringBuilder.append("Срок выборов: " + this.electionDeadline + '\n');
+        stringBuilder.append("Главный в стране: " + this.major + '\n');
+        stringBuilder.append("Военный потенциал: " + this.warPower + '\n');
         stringBuilder.append("Время у власти: " + this.timePower + '\n');
 
         System.out.println(stringBuilder);
     }
 
-    @Override
-    public void changeMajor() {
-
-    }
-
-    @Override
-    public void changeRegime() {
-
-    }
 }
